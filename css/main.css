@@ -133,7 +133,7 @@ li a.active{
     width: 50vw;
     max-width: 40vh;
     height: 6vh;
-    font-size: 2vh;
+    font-size: min(2vw, 2vh);
     border-radius: 2vh;
     font-weight: bolder;
     border-style: none;
@@ -147,4 +147,5 @@ li a.active{
 .title-01{
     padding: min(3vw, 3vh);
     padding-top: min(5vw, 5vh);
+    font-size: min(4vw, 5vh);
 }
