@@ -1,0 +1,86 @@
+:root {
+    --color01: rgb(0, 50, 66);
+    --color02: rgb(255, 189, 106);
+    --color03: rgb(255, 355, 255);
+    --color04: rgb(0, 0, 0);
+}
+
+.hero{
+    width: 100vw;
+    max-width: 100vh;
+    min-height: 100vh;
+    background-color: #00414b;
+    opacity: 0.8;
+    background: #003242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-01{
+    width: 100vw;
+    max-width: 100vh;
+    min-height: 100vh;
+    background: #ffffff;
+    
+}
+
+.hero_name{
+    font-family: 'miss';
+    color: #ffbd6a;
+    text-align: center;
+    padding: min(3vw, 3vh);    
+    text-shadow: 0px -0.08vh 1vh #ffbd6a;    
+}
+
+.hero_name p:nth-child(1), .hero_name p:nth-child(3){
+    font-size: min(17vw, 17vh);
+}
+
+.hero_name p:nth-child(2){
+    font-size: min(8vw, 8vh);
+}
+
+.invite p{
+    color: #ffffff;
+    font-family: 'lora';
+}
+
+.invite p:nth-child(1){
+    font-style: italic;
+    font-size: min(2vw, 2vh);
+}
+
+.invite p:nth-child(2){
+    font-size: min(4vw, 4vh);
+    font-family: 'kalam';
+    color: #ffbd6a;
+}
+
+.invite p:nth-child(3){
+    font-size: min(1vw, 1vh);
+    margin-top: min(2vw, 2vh);
+}
+
+.invite p:nth-child(4){
+    font-size: min(2vw, 2vh);
+    font-weight: bold;
+    color: #ffbd6a;
+}
+
+.ornament{
+    width: 60vw;
+    max-width: 50vh;
+    height: 0.4vh;
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.svg-02{
+    transform: rotate(180deg);
+    margin-top: 4vh;
+}
+

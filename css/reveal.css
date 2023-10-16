@@ -1,0 +1,43 @@
+section, article{
+    overflow: hidden;
+}
+
+.up{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.down{
+    position: relative;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.left{
+    position: relative;
+    transform: translate(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.right{
+    position: relative;
+    transform: translate(-150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.fade-in{
+    position: relative;
+    transform: translateZ(150px);
+    opacity: 0;
+    transition: 3s all ease;
+}
+
+.up.active, .down.active, .left.active, .right.active, .fade-in.active{
+    transform: translate(0);
+    opacity: 1;
+}
