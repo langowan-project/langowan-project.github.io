@@ -139,10 +139,10 @@ li a.active{
     border-style: none;
 }
 
-.text_popup{
+#text_popup{
     font-family: Times New Roman, serif;
     text-align: center;
-    font-size: min(3vw, 3vh);
+    font-size: min(4vw, 4vh);
 }
 
 .title-01{
