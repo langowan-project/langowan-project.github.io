@@ -28,7 +28,7 @@
 .c_text p{
     color: #000000;
     background-color: rgba(0, 0, 0, 0.3);
-    font-size: min(2vw, 2vh);
+    font-size: min(2.4vw, 2.4vh);
     width: 60vw;
     max-width: 50vh;
     margin: auto;
