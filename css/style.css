@@ -23,7 +23,7 @@
     font-family: 'miss';
     color: #ffbd6a;
     text-align: center;
-    padding: min(3vw, 3vh);    
+    padding: min(2vw, 2vh);    
     text-shadow: 0px -0.08vh 1vh #ffbd6a;    
 }
 
@@ -74,6 +74,6 @@
 
 .svg-02{
     transform: rotate(180deg);
-    margin-top: 2vh;
+    margin-top: 1vh;
 }
 
