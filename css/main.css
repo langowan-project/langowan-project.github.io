@@ -142,10 +142,11 @@ li a.active{
 .text_popup{
     font-family: Times New Roman, serif;
     text-align: center;
+    font-size: min(3vw, 3vh);
 }
 
 .title-01{
-    padding: min(3vw, 3vh);
+    padding: min(5vw, 5vh);
     padding-top: min(5vw, 5vh);
     font-size: min(4vw, 5vh);
 }
