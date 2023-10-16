@@ -3,8 +3,6 @@
     max-width: 100vh;
     min-height: 100vh;
     background-color: #00414b;
-    opacity: 0.8;
-    background: #003242;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +14,6 @@
     max-width: 100vh;
     min-height: 100vh;
     background: #ffffff;
-    
 }
 
 .hero_name{
