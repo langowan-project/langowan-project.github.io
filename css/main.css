@@ -1,0 +1,149 @@
+
+@font-face {
+    font-family: 'navbar';
+    src: url('../font/navbar.ttf');
+}
+
+@font-face {
+    font-family: 'miss';
+    src: url('../font/missfajardose.ttf');
+}
+
+@font-face {
+    font-family: 'kalam';
+    src: url('../font/kalam.ttf');
+}
+
+@font-face {
+    font-family: 'crimsontext';
+    src: url('../font/crimsontext.ttf');
+}
+
+*, html{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'crimsontext', serif;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(230, 230, 230,0.95);
+    box-shadow: 0px -0.08vh 0.9vh rgba(0,0,0,0.4);
+    border-top-left-radius: 0.6vh;
+    border-top-right-radius: 0.6vh;
+    z-index: 100;
+}
+
+li{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+li a{
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    margin: min(0.5vw, 0.5vh);
+}
+
+.menu_icon{
+    font-family: 'navbar';
+    font-size: min(5vw, 5vh);
+}
+
+li a.active{
+    color: rgba(180, 180, 180, 1);
+    transition: 0.2s ease-out;
+}
+
+/*==================== PLAY BUTTON ====================*/
+#play-pause {
+    cursor: pointer;
+    text-indent: -999999px;
+    width: min(4.6vh, 4.6vw);
+    height: min(4.6vh, 4.6vw);
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAyNHYtMjRsMjAgMTItMjAgMTJ6Ii8+PC9zdmc+);
+    background-repeat: no-repeat!important;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: min(2.5vw, 2.5vh);
+    margin: auto;
+    margin-left: min(0.5vw, 0.5vh);
+    margin-right: min(0.5vw, 0.5vh);
+    border-radius: 50%;
+    border: min(0.5vw, 0.5vh) Solid;
+}
+
+.play {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAyNHYtMjRsMjAgMTItMjAgMTJ6Ii8+PC9zdmc+);
+}
+
+.pause {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTAgMjRoLTZ2LTI0aDZ2MjR6bTEwLTI0aC02djI0aDZ2LTI0eiIvPjwvc3ZnPg==)!important;
+}
+
+.play, .pause{
+    background-color: rgba(250, 250, 250, 1);
+}
+
+/*==================== POPUP OPENING ====================*/
+.popup{
+    background-color: black;
+    color: white;
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;            
+    justify-content: center;
+    align-items: center;
+    z-index: 150;
+}
+        
+.popup button{
+    position: absolute;
+    width: 50vw;
+    max-width: 40vh;
+    height: 6vh;
+    font-size: 2vh;
+    border-radius: 2vh;
+    font-weight: bolder;
+    border-style: none;
+}
+
+#text_popup{
+    font-family: Times New Roman, serif;
+    text-align: center;
+    font-size: min(4vw, 4vh);
+    !important;
+}
+
+.title-01{
+    padding: min(5vw, 5vh);
+    padding-top: min(4vw, 4vh);
+    font-size: min(6vw, 6vh);
+}
