@@ -1,0 +1,75 @@
+.hero{
+    width: 100vw;
+    max-width: 100vh;
+    min-height: 100vh;
+    background-color: var(--color-A);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-01{
+    width: 100vw;
+    max-width: 100vh;
+    min-height: 100vh;
+    background-color: var(--color-C);
+    
+}
+
+.hero_name{
+    font-family: 'miss', cursive;
+    color: var(--color-B);
+    text-align: center;
+    padding: min(3vw, 3vh);    
+    text-shadow: 0px -0.08vh 1vh var(--color-B);    
+}
+
+.hero_name p:nth-child(1), .hero_name p:nth-child(3){
+    font-size: min(17vw, 17vh);
+}
+
+.hero_name p:nth-child(2){
+    font-size: min(12vw, 12vh);
+}
+
+.invite p{
+    color: var(--color-C);
+}
+
+.invite p:nth-child(1), .invite p:nth-child(3){
+    font-style: italic;
+    font-size: min(3vw, 3vh);
+}
+
+.invite p:nth-child(2), .invite p:nth-child(4){
+    font-size: min(4.5vw, 4.5vh);
+    color: var(--color-B);
+}
+
+.ornament{
+    width: 60vw;
+    max-width: 50vh;
+    height: 0.4vh;
+    background-color: var(--color-C);
+    margin: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.svg-02{
+    transform: rotate(180deg);
+    margin-top: 1vh;
+}
+
+.c_text p{
+    color: var(--color-A);
+    font-size: min(2.5vw, 2.5vh);
+    background-color: hsla(var(--h1), var(--s1), var(--l1), 0.4);
+    width: 60vw;
+    max-width: 50vh;
+    margin: auto;
+    padding: 0.3vh;
+    z-index: 99;
+}
+
