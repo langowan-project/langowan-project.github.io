@@ -1,0 +1,27 @@
+.simply-countdown{
+    overflow:hidden;
+    display:table;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: var(--color-B);
+    font-size: min(2vw, 2vh);
+    margin: auto;
+}
+
+.simply-countdown>.simply-section{
+    width: min(4vw, 4vh);
+    height: min(4vw, 4vh);
+    padding:min(4vw, 4vh);
+    display:flex;
+    float: left;
+    align-items:center;
+    justify-content:center;
+    margin: min(2vw, 2vh);
+    background: var(--color-A);
+    box-shadow:0 1px 3px rgba(250, 250, 250;,.12);
+}
+    
+.simply-countdown>.simply-section .simply-amount,.simply-countdown>.simply-section .simply-word{
+    display:block;
+    text-align:center;
+}
