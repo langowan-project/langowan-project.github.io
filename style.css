@@ -1,0 +1,67 @@
+.hero{
+    width: 100vw;
+    min-height: 100vh;
+    min-height: 100svh;
+    background-color: var(--color-A);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-01{
+    width: 100vw;
+    min-height: 100vh;
+    min-height: 100svh;
+    background-color: var(--color-C);
+    
+}
+
+.hero_name{
+    font-family: 'font-01', fantasy;
+    color: var(--color-B);
+    text-align: center;
+    padding: min(3vw, 3vh);    
+    text-shadow: 0px -0.08vh 1vh var(--color-B);    
+}
+
+.hero_name p{
+    font-size: min(12vw, 12vh);
+}
+
+.hero_name p:nth-child(2){
+    font-size: min(8vw, 8vh);
+}
+
+.invite p{
+    color: var(--color-C);
+    font-size: min(3.5vw, 3.5vh);
+}
+
+.invite p:nth-child(2){
+    font-style: italic;
+    font-size: min(2.5vw, 2.5vh);
+    margin-top: min(4vw, 4vh);
+}
+
+.ornament{
+    width: 60vw;
+    max-width: 50vh;
+    height: 0.4vh;
+    background-color: var(--color-C);
+    margin: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.c_text p{
+    color: var(--color-A);
+    font-size: min(2.5vw, 2.5vh);
+    font-weight: bold;
+    background-color: hsla(var(--h1), var(--s1), var(--l1), 0.1);
+    width: 60vw;
+    max-width: 50vh;
+    margin: auto;
+    padding: 0.3vh;
+    z-index: 99;
+}
