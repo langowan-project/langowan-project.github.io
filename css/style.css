@@ -22,6 +22,7 @@ main article{
     min-height: 100svh;
     background-color: var(--color-C);
     padding-top: min(5vw, 5vh);
+    padding-bottom: min(10vw,10vh)
 }
 
 main article:nth-child(1){
