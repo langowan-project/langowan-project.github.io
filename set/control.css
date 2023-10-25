@@ -1,0 +1,82 @@
+:root{
+  --background: url(../../set/images/gallery/001.webp);
+/*========== COLOR ==========*/
+  --h: 200;
+  --s0: 0%;
+  --s25: 25%;
+  --s50: 50%;
+  --s75: 75%;
+  --s100: 100%;
+  --l20: 20%;
+  --l40: 40%;
+  --l60: 60%;
+  --l80: 80%;
+  --l99: 99%;
+  --color-A: hsl(var(--h), var(--s0), var(--l20));
+  --color-B: hsl(var(--h), var(--s100), var(--l80));
+  --color-C: hsl(var(--h), var(--s100), var(--l99));
+  --color-D: hsl(var(--h), var(--s100), var(--l60));
+}
+
+/*========== FONT ==========*/
+@font-face{
+  font-family: icon;
+  src: url(../assets/font/icon.ttf);
+}
+
+@font-face{
+  font-family: font-1;
+  src: url(../assets/font/greatvibes.ttf);
+}
+
+@font-face{
+  font-family: font-2;
+  src: url(../assets/font/caveat.ttf);
+}
+
+@font-face{
+  font-family: font-3;
+  src: url(../assets/font/crimsontext.ttf);
+}
+
+h1{
+  font-family: font-1, fantasy;
+  color: var(--color-B);
+  font-size: min(9vw, 9vh);
+  font-weight: normal;
+  text-shadow: 0px -0.08vh 1vh var(--color-B);
+  text-align: center;
+}
+
+.h1{
+  font-size: min(7vw, 7vh);
+  text-align: center;
+}
+
+h2{
+  font-family: font-2;
+  text-align: center;
+  font-size: min(6vw, 6vh);
+}
+
+h3{
+  font-family: font-2;
+  text-align: center;
+  font-size: min(4vw, 4vh);
+}
+
+h4{
+  font-family: font-3;
+  text-align: center;
+  font-size: min(3vw, 3vh);
+}
+
+h5{
+  font-family: font-3;
+  font-size: min(2.5vw, 2.5vh);
+}
+
+p{
+  font-family: font-3;
+  font-size: min(2.5vw, 2.5vh);
+}
