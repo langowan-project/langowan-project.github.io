@@ -52,7 +52,7 @@ li span{
 
 @media only screen and (orientation: landscape){
   ul{
-    bottom: 20%;
+    bottom: 20svh;
     left: 0;
     width: auto;
   }
@@ -79,6 +79,9 @@ li span{
     width: min(5vw, 5vh);
     border-radius: 50%;
     margin: auto;
+  }
+  #acara{
+    margin-left: 2vw;
   }
 }
 
