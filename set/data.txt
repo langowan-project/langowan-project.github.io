@@ -1,0 +1,24 @@
+========== "DATA" ==========
+
+groom: Romeo Montague
+bride: Juliet Capulet
+tanggal-acara: Selasa, 12 Agustus 2024
+
+
+========== "KISAH KAMI" ==========
+
+waktu-cerita-1: Januari 2021
+judul-cerita-1: Pertama Kali Kenal
+isi-cerita-1: liber erroribus curabitur an posse morbi nostra adipiscing labores sodales elit deserunt eu mattis maiestatis delicata prompta repudiare varius idque.
+
+waktu-cerita-2: Mei 2022
+judul-cerita-2: Mulai Dekat
+isi-cerita-2: fastidii delicata appetere nam maiestatis nihil liber commune magnis vocent civibus vis aptent verterem antiopam lectus inceptos evertitur veritus similique.
+
+waktu-cerita-3: Juli 2022
+judul-cerita-3: Menyatakan Cinta
+isi-cerita-3: duis vel intellegat gravida quam reprehendunt ferri mei docendi fugit taciti ultricies inani quidam mediocritatem sit vim mnesarchum dui accusata.
+
+waktu-cerita-4: Agustus 2023
+judul-cerita-4: Tunangan
+isi-cerita-4: fastidii delicata appetere nam maiestatis nihil liber commune magnis vocent civibus vis aptent verterem antiopam lectus inceptos evertitur veritus similique.
