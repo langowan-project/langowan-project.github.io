@@ -1,9 +1,27 @@
 ========== "DATA" ==========
 
-groom: Romeo Montague
-bride: Juliet Capulet
 tanggal-acara: Selasa, 12 Agustus 2024
 
+("GROOM")
+groom: Romeo Montague
+biodata-groom: Anak pertama dari Bapak Lorem dan Ibu Ipsum
+alamat-groom: Langowan
+
+("BRIDE")
+bride: Juliet Capulet
+biodata-bride: Anak ketiga dari Bapak Ipsum dan Ibu Lorem
+alamat-bride: Tondano
+
+========== PEMBERKATAN DAN RESEPSI ==========
+("PEMBERKATAN NIKAH")
+tanggal-pemberkatan: Selasa, 12 Agustus 2023
+waktu-pemberkatan: Pukul 12.00 Wita
+tempat-pemberkatan: Gereja Kristen Sejati
+
+("ACARA RESEPSI")
+tanggal-resepsi: Selasa, 12 Agustus 2023
+waktu-resepsi: Pukul 16.00 Wita
+tempat-resepsi: Gedung Serbaguna Sekali
 
 ========== "KISAH KAMI" ==========
 
