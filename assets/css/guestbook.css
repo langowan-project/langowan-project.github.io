@@ -1,0 +1,176 @@
+/*==============================================================================*/
+
+.text-blue {
+    background-color: lightgreen;
+    padding: min(0.2vw, 0.2vh) min(1vw, 1vh);
+    border-radius: min(0.5vw, 0.5vh);
+}
+
+.text-green {
+    background-color: rgb(180, 163, 182);
+    padding: min(0.2vw, 0.2vh) min(1vw, 1vh);
+    border-radius: min(0.5vw, 0.5vh);
+}
+
+.text-red {
+    background-color: lightsalmon;
+    padding: min(0.2vw, 0.2vh) min(1vw, 1vh);
+    border-radius: min(0.5vw, 0.5vh);
+}
+
+.guestbook{
+    width: 100vw;
+    max-width: 130vh;
+    display: flex;
+    margin: auto;
+    margin-top: 3vh;
+    flex-direction: column;
+}
+
+.guestbook-form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-C);
+    box-shadow: 0 0 min(1vw, 1vh) hsla(var(--h), var(--s_A), var(--l_A), 0.4);
+    margin: auto;
+    margin-bottom: 3vh;
+    margin-top: 2vh;
+    border-radius: min(2vw, 2vh);
+    font-size: min(2.5vw, 2.5vh);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2vh;
+}
+
+textarea{
+    width: min(70vw, 70vh);
+    border-radius: min(2vw, 2vh);
+    padding: min(2vw, 2vh);
+    resize: none;
+    margin: 3vh;
+}
+
+input{
+    width: min(70vw, 70vh);
+    border-radius: min(2vw, 2vh);
+    padding: min(2vw, 2vh);
+    margin: 3vh;
+} 
+
+select{
+    height: 3.8vh;
+    width: min(70vw, 70vh);
+    border-radius: min(1vw, 1vh);
+    color: rgb(105, 105, 105);
+    text-indent: 2%;
+}
+
+.kirim{
+    width: 20%;
+    font-size: min(2vw, 2vh);
+    font-weight: bold;
+    background-color: grey;
+    color: var(--color-E);
+    margin: min(3vw, 3vh);
+    border-radius: min(3vw, 3vh);
+    padding: min(1vw, 1vh) 0;
+    position: relative;
+    display: block;
+}
+
+.kirim:hover{
+    background-color: rgb(173, 173, 173);
+}
+
+/*========== GUESTBOOK ENTRIES ==========*/
+
+.postingan{
+    width: 100vw;
+    max-width: 130vh;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.guestbook-entries{
+    width: 90%;
+    margin: 2vh auto;
+    background-color: var(--color-C);
+    box-shadow: 0 0 min(1vw, 1vh) hsla(var(--h), var(--s_A), var(--l_A), 0.4);
+    padding: 3vh 0;
+    border-radius: min(2vw, 2vh);
+}
+
+.guestbook-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guestbook-wrap{
+    width: 90%;
+    background-color: var(--color-E);
+    display: flex;
+    margin: 1vh 0px;
+    padding: min(1vw, 1vh);
+    align-items: flex-start;
+    border-radius: min(2vw, 2vh);
+}
+
+.avatar{
+    height: min(7vw, 7vh);
+    width: min(7vw, 7vh);
+    margin: min(1vw, 1vh);
+    margin-top: min(0.5vw, 0.5vh);
+}
+
+minidenticon-svg svg{
+    border-radius: 50%;
+    background-color: white;
+    border: min(0.4vw, 0.4vh) solid hsla(var(--h), var(--s_A), var(--l_A), 0.5);
+    height: min(7vw, 7vh);
+    width: min(7vw, 7vh);
+}
+
+.guestbook-wrap h3, .guestbook-wrap h4, .guestbook-wrap p, .guestbook-wrap h6{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.guestbook-wrap h3{
+    font-size: min(3vw, 3vh);
+    font-weight: bold;
+}
+
+.guestbook-wrap h4{
+    font-size: min(2vw, 2vh);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.guestbook-wrap h3, .guestbook-wrap h4{
+    display: inline-block;
+    margin: min(0.5vw, 0.5vh);
+}
+
+.guestbook-wrap p{
+    margin: min(0.5vw, 0.5vh);
+    font-size: min(2.5vw, 2.5vh);
+}
+
+.guestbook-wrap h6{
+    font-size: min(1.5vw, 1.5vh);
+    font-weight: bold;
+    margin: min(0.5vw, 0.5vh);
+    margin-top: 2vh
+}
+
+.rsvp{
+    display: flex;
+    width: fit-content;
+    background-color: var(--color-E);
+    justify-content: center;
+    margin: auto;
+    border-radius: min(2vw, 2vh);
+    box-shadow: 0 0 min(1vw, 1vh) hsla(var(--h), var(--s_A), var(--l_A), 0.4);
+}
