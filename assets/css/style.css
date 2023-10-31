@@ -32,7 +32,7 @@ button:after{
   right:0;
   top:0;
   bottom:0;
-  z-index:200;
+  z-index:100;
   background-color: transparent;
 }
 
