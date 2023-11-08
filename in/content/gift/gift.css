@@ -1,0 +1,38 @@
+.gift-01, .gift-02, .gift-03{
+    width: min(30vw, 30vh);
+    height: min(6vw, 6vh);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.gift-01{
+    background-image: var(--gift-01);
+}
+
+.gift-02{
+    background-image: var(--gift-02);
+}
+
+.gift-03{
+    background-image: var(--gift-03);
+}
+
+.copytext{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: min(0.5vw, 0.5vh);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: min(2.5vw, 2.5vh);
+    font-weight: bold;
+    margin: min(0.5vw, 0.5vh);
+    margin-top: 2vh;
+    border: none;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+}
