@@ -145,7 +145,7 @@
     
   /* Make sure that all arrows are pointing leftwards */
   .tl-left::before, .tl-right::before{
-    left: 60px;
+    left: 60.5px;
     border: medium solid hsla(var(--h), var(--s_A), var(--l_A), 1);
     border-width: 10px 10px 10px 0;
     border-color: transparent hsla(var(--h), var(--s_A), var(--l_A), 1) transparent transparent;
