@@ -92,7 +92,7 @@ h6{
 
 p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(0.428rem, min(3.42vw, 3.42vh), 1.28rem);
+    font-size: clamp(0.5rem, min(4vw, 4vh), 1.5rem);
 }
 
 .icon{
