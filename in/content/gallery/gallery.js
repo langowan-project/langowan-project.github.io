@@ -1,84 +1,75 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Kode JavaScript untuk memasukkan kode HTML
-  const thumbnails = `
-    <img class="bottom" src="../in/assets/gallery/001.webp" onclick="openModal('../in/assets/gallery/001.webp')">
-    <img class="bottom" src="../in/assets/gallery/002.webp" onclick="openModal('../in/assets/gallery/002.webp')">
-    <img class="bottom" src="../in/assets/gallery/003.webp" onclick="openModal('../in/assets/gallery/003.webp')">
-    <img class="bottom" src="../in/assets/gallery/004.webp" onclick="openModal('../in/assets/gallery/004.webp')">
-    <img class="bottom" src="../in/assets/gallery/005.webp" onclick="openModal('../in/assets/gallery/005.webp')">
-    <img class="bottom" src="../in/assets/gallery/006.webp" onclick="openModal('../in/assets/gallery/006.webp')">
-    <img class="bottom" src="../in/assets/gallery/007.webp" onclick="openModal('../in/assets/gallery/007.webp')">
-    <img class="bottom" src="../in/assets/gallery/008.webp" onclick="openModal('../in/assets/gallery/008.webp')">
-    <!-- Tambahkan gambar lainnya di sini -->
-    <div class="card-container">
-      <div class="card-wrap">
-        <div class="card">
-        <h4>Our Video</h4>
-        <video width="100%" height="auto" controls>
-          <source src="../in/assets/video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        </div>
-      </div>
-    </div>
-  `;
-    
-  document.getElementById('thumbnails').innerHTML = thumbnails});
+  const thumbnails = document.getElementById('thumbnails');
+  const modal = document.getElementById("myModal");
+  const modalImg = document.getElementById("modalImg");
+  const closeBtn = document.getElementById("closeBtn");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+  const totalImages = 8;
+  let currentImageIndex = 0;
 
-let modal = document.getElementById("myModal");
-let modalImg = document.getElementById("modalImg");
-let closeBtn = document.getElementById("closeBtn");
-let prevBtn = document.getElementById("prevBtn");
-let nextBtn = document.getElementById("nextBtn");
-let currentImageIndex = 0;
-const totalImages = 8;
+  const imageArray = [
+    "../in/assets/gallery/001.webp",
+    "../in/assets/gallery/002.webp",
+    "../in/assets/gallery/003.webp",
+    "../in/assets/gallery/004.webp",
+    "../in/assets/gallery/005.webp",
+    "../in/assets/gallery/006.webp",
+    "../in/assets/gallery/007.webp",
+    "../in/assets/gallery/008.webp",
+    // Tambahkan gambar lainnya di sini
+  ];
 
-function openModal(imageUrl) {
-  modal.style.display = "block";
-  modalImg.src = imageUrl;
-  document.body.style.overflow = "hidden";
-}
+  imageArray.forEach((imageUrl, index) => {
+    const img = document.createElement("img");
+    img.classList.add("bottom");
+    img.src = imageUrl;
+    img.onclick = () => openModal(imageUrl, index);
+    thumbnails.appendChild(img);
+  });
 
-closeBtn.onclick = function () {
-  modal.style.display = "none";
-  document.body.style.overflow = "auto";
-}
-
-prevBtn.onclick = function () {
-  currentImageIndex--;
-  if (currentImageIndex < 0) {
-    currentImageIndex = totalImages - 1; // Kembali ke foto terakhir
+  function openModal(imageUrl, index) {
+    modal.style.display = "block";
+    modalImg.src = imageUrl;
+    currentImageIndex = index;
+    document.body.style.overflow = "hidden";
   }
-  modalImg.src = `../in/assets/gallery/00${currentImageIndex + 1}.webp`;
-}
 
-nextBtn.onclick = function () {
-  currentImageIndex++;
-  if (currentImageIndex >= totalImages) {
-    currentImageIndex = 0; // Kembali ke foto pertama
+  closeBtn.onclick = function () {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
   }
-  modalImg.src = `../in/assets/gallery/00${currentImageIndex + 1}.webp`;
-}
 
-// Fungsi slide mobile
-let touchStartX = 0;
-let touchEndX = 0;
+  prevBtn.onclick = function () {
+    currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
+    modalImg.src = `../in/assets/gallery/00${currentImageIndex + 1}.webp`;
+  }
 
-modalImg.addEventListener("touchstart", function (e) {
-  touchStartX = e.touches[0].clientX;
+  nextBtn.onclick = function () {
+    currentImageIndex = (currentImageIndex + 1) % totalImages;
+    modalImg.src = `../in/assets/gallery/00${currentImageIndex + 1}.webp`;
+  }
+
+  // Fungsi slide mobile
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  modalImg.addEventListener("touchstart", function (e) {
+    touchStartX = e.touches[0].clientX;
+  });
+
+  modalImg.addEventListener("touchend", function (e) {
+    touchEndX = e.changedTouches[0].clientX;
+    handleSwipe();
+  });
+
+  function handleSwipe() {
+    const swipeThreshold = 50;
+
+    if (touchStartX - touchEndX > swipeThreshold) {
+      nextBtn.click();
+    } else if (touchEndX - touchStartX > swipeThreshold) {
+      prevBtn.click();
+    }
+  }
 });
-
-modalImg.addEventListener("touchend", function (e) {
-  touchEndX = e.changedTouches[0].clientX;
-  handleSwipe();
-});
-
-function handleSwipe() {
-  const swipeThreshold = 50;
-
-  if (touchStartX - touchEndX > swipeThreshold) {
-    nextBtn.click();
-  } else if (touchEndX - touchStartX > swipeThreshold) {
-    prevBtn.click();
-  }
-}
