@@ -51,17 +51,17 @@ judul-cerita-4: Tunangan
 isi-cerita-4: fastidii delicata appetere nam maiestatis nihil liber commune magnis vocent civibus vis aptent verterem antiopam lectus inceptos evertitur veritus similique.
 
 
-
-undangan-001: Bapak, Ibu, Saudara, Saudari
-undangan-002:
-undangan-003:
-undangan-004:
-undangan-005:
-undangan-006:
-undangan-007:
-undangan-008:
-undangan-009:
-undangan-010:
+default: Bapak, Ibu, Saudara, Saudari
+undangan-001: Kel. Undangan-001
+undangan-002: Kel. Undangan-002
+undangan-003: Kel. Undangan-003
+undangan-004: Kel. Undangan-004
+undangan-005: Kel. Undangan-005
+undangan-006: Kel. Undangan-006
+undangan-007: Kel. Undangan-007
+undangan-008: Kel. Undangan-008
+undangan-009: Kel. Undangan-009
+undangan-010: Kel. Undangan-010
 undangan-011:
 undangan-012:
 undangan-013:
