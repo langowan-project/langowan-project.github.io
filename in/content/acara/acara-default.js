@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Memuat data dari file data.txt
-fetch('../in/data-input/data.txt')
+fetch('/in/data-input/data.txt')
     .then((response) => response.text())
     .then((data) => {
         const lines = data.split('\n');
