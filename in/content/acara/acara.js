@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <h5 class="icon">c</h5>
                     <h5 class="tempat-pemberkatan"></h5>
                 </div>
-                <button type="button" id="button-pemberkatan"><h6>Detail Lokasi</h6></button>
+                <button type="button" id="button-pemberkatan"><h5>Detail Lokasi</h5></button>
             </div>
             <div class="card right">
                 <p class="icon-acara">b</p>
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <h5 class="icon">c</h5>
                     <h5 class="tempat-resepsi"></h5>
                 </div>
-                <button type="button" id="button-resepsi"><h6>Detail Lokasi</h6></button>
+                <button type="button" id="button-resepsi"><h5>Detail Lokasi</h5></button>
             </div>
         </div>
     `;
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     // Kode JavaScript untuk memasukkan kode HTML
     const countdownBtn = `
-                        <button type="button" id="button-kalender"><h6>Tambahkan Ke Kalender Google</h6></button>
+                        <button type="button" id="button-kalender"><h5>Tambahkan Ke Kalender Google</h5></button>
     `;
 
     document.getElementById('countdown-btn').innerHTML = countdownBtn;
