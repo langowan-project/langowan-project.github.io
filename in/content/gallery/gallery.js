@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="card-wrap">
         <div class="card">
         <h4>Our Video</h4>
-        <video width="320" height="240" controls>
+        <video width="100%" height="auto" controls>
           <source src="../in/assets/video.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
